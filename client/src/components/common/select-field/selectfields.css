@@ -1,0 +1,112 @@
+
+/* React-Select component css changes  ::Start*/
+.css-b62m3t-container{
+   width: 100%;
+   
+}
+
+.css-13cymwt-control{
+   border-radius:2rem!important;  
+   border-width: 0px!important;
+   background-color: var(--bg-color)!important;
+   color: var(--color)!important;
+}
+.css-1nmdiq5-menu{
+   background-color: var(--fields)!important;
+   color: var(--color)!important;
+}
+
+.css-1nmdiq5-menu > * :hover{
+   background-color: var(--bg-color)!important; 
+ }
+.css-1jqq78o-placeholder{
+   color: var( --input-focus-color)!important;
+}
+.css-1dimb5e-singleValue{
+   color: var( --input-focus-color)!important;
+}
+.css-166bipr-Input{
+ 
+   color: var( --input-focus-color)!important;
+}
+.css-t3ipsp-control{
+   outline: none!important;
+   border: none!important;
+   border-radius:2rem!important;  
+   box-shadow: 0 0 0 1px #f1f1f1!important;
+   background-color: var(--input-focus)!important;
+   color: var( --input-focus-color)!important;
+}
+ 
+/* React-Select component css changes  ::End*/
+
+.group-select{
+   display: flex;
+   align-items: center;
+   border-radius: 2px;
+   background-color: var(--fields);
+   margin: 0.5rem;
+   border: 1px solid var(--border);
+   border-radius: 2rem;
+   max-height: auto;
+   border: border-box;
+   max-width: 100%;
+}
+.group-select-labal{
+    display: block;
+    padding: 0.5rem;
+    font-size: .85em;
+    font-weight: 500;
+    text-align: start;
+    max-width: 80%;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.group-select >select{
+    width: 100%;
+    height: 100%;
+    min-width: 0%;
+    border-radius: 2rem;
+}
+
+ @media screen and (max-width: 768px) {
+ .group-select{
+    border: 1px solid transparent;
+    padding: 0.5rem;
+    flex-direction: column;
+    border-radius: 0px;
+    background-color: transparent;  
+    max-height: 5.2rem;
+    border: border-box;
+    align-items: flex-start;
+ }
+ .css-13cymwt-control{
+   border-radius:2rem!important;  
+   border-width: 1px!important;
+}
+.css-t3ipsp-control{ 
+   border-radius:2rem!important;  
+   box-shadow: 0 0 0 1px #f1f1f1!important;
+}
+
+ .group-select-labal{
+    display: block;
+    padding: 0.5rem;
+    font-size: .75em;
+    text-align: start;
+    max-width: 100%;
+    
+    width: 9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+ }
+ .group-select >select{
+   border: 1px solid var(--border);
+    width: 100%;
+    min-width: 0%;
+    border-radius: 0rem;
+    height: 4rem;
+ }}

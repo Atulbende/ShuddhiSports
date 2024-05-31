@@ -1,0 +1,116 @@
+
+.d-flex{
+    display: flex;
+}
+.d-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.d-none{
+    display: none !important;
+}
+
+.m-selected{
+    background: var(--hover);
+}
+.col-100 {
+    width: calc(100% - 1rem);
+}
+.col-75 {
+    width: calc(75% - 1rem) ;
+}
+.col-50 {
+    width: calc(50% - 1rem) ;
+}
+.col-33 {
+    width: calc(33.33% - 1rem) ;
+}
+.col-25 {
+    width: calc(25% - 1rem) ;
+}
+.col-15 {
+    width: calc(16.66% - 1rem) ;
+}
+.row-25{
+    height: 30%;
+}
+
+.row-50{
+    height: 60%;
+}
+
+.row-100{
+    height:100%;
+}
+
+// Divider of fields
+.divider{
+    border-bottom: 2px solid #eee;
+    margin: 10px;
+}
+// Error Style
+.border-danger{
+    border: 1px solid #dee2e6 !important;
+    border-color: #dc3545 !important;
+    border-radius: 2rem;
+}
+.required-msg-shake {
+    animation: shaking 0.3s ease-out;
+  }
+  @keyframes shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+   }
+
+@media screen and (max-width: 768px) {
+    .col-100,.col-75,.col-50,.col-33,.col-25,.col-15 {
+        width: calc(100% - 1rem);
+    }
+  }
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+        .col-25,.col-15 {
+            width: calc(50% - 1rem);
+        }
+      }
+  @media screen and (min-width: 769px) and (max-width: 1366px) {
+    .col-33 {
+        width: calc(100% - 1rem);
+    }
+    .col-25 {
+        width: calc(50% - 1rem);
+    }
+    .col-15{
+        width: calc(50% - 1rem);
+    }
+
+    }
+    @media screen and (min-width: 769px) and (max-width: 1366px) {
+    .col-33 {
+        width: calc(100% - 1rem);
+    }
+    .col-25 {
+        width: calc(50% - 1rem);
+    }
+    .col-15{
+        width: calc(50% - 1rem);
+    }
+
+    }
+    .required::before{
+        content: '*';
+        color: red;
+        font-weight: 900;
+            font-size: 1rem;
+    }
+// @media screen and (min-width: 768px) and (max-width: 1024px) {
+//     .col-33,.col-25,.col-15 {
+//         width: calc(50% - 1rem);
+//     }
+// 
+body{
+    background: linear-gradient(90deg, #8a87c8, #776BCC);
+  }

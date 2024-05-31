@@ -1,0 +1,47 @@
+.good-morning{
+    transition: background-color 3s ease-in;
+    --bg-color: white ;
+    --dialog:var(--bg-color);
+    --hover:#ebe6e6;
+    --hover-color:var(--dark);
+    --border: rgb(240, 233, 233);
+    --fields: #f1f1f1;
+    --login:#6f42c1;
+    --font-color:#252525;
+    --dark: #343a40;
+    --gray:#eee;
+    --input-focus:var(--hover);
+    --input-focus-color:var(--hover-color);
+}
+
+.good-afternoon{
+    --bg-color: #212341;
+    --color:white;
+    --dialog:var(--bg-color);
+    --input-focus:#191c33;
+    --input-focus-color:var(--hover-color);
+    --hover-color:var(--white);
+    --border: #8598ac;
+    --fields: #292e58;
+    --hover:var(--fields);
+    --login:#4e455e;
+    --font-color:#eee;
+    --dark: #343a40;
+    --gray:#eee;
+
+    
+}
+/*.good-evening{
+    --bg-color: white ;
+    --dialog:var(--bg-color);
+    --hover:#ebe6e6;
+    --hover-color:var(--dark);
+    --border: rgb(240, 233, 233);
+    --fields: #f1f1f1;
+    --login:#6f42c1;
+    --font-color:#252525;
+    --dark: #343a40;
+    --gray:#eee;
+    --input-focus:var(--hover);
+    --input-focus-color:var(--hover-color);
+} */

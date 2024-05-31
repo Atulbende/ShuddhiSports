@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Outfit:wght@300&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Outfit:wght@300&family=Roboto+Condensed:wght@400;700&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Heebo&family=Montserrat&family=Outfit:wght@300&family=Roboto+Condensed:wght@400;700&family=Ubuntu&display=swap');
+
+:root {
+    --bg: #6f42c1;
+    --primary: #fafafa;
+    --secondary: #f9690e;
+    --bg-color: #fff;
+    --dialog:var(--bg-color);
+    --hover:#ebe6e6;
+    --hover-color:var(--dark);
+    --border: rgb(197 197 197);
+    --fields: #ebe6e6;
+    --login:linear-gradient(90deg, #8a87c8, #776BCC);
+    --font-color:#252525;
+    --dark: #343a40;
+    --gray:#eee;
+    --input-focus:var(--dark);
+    --input-focus-color:var(--white);
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; 
+    --font-family-default:'Roboto Condensed'!important;
+    --font-family-happy:'Heebo'!important;
+    --font-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-body-font-family: var( --font-font-sans-serif);
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --z-index-0:0;
+    --z-index--1:-1;
+    --z-index--2:-2;
+    --z-index-1:1;
+    --z-index-2:2;
+    --z-index-3:3;
+    --z-index-4:4;
+    --z-index-5:5;
+    --z-index-6:6;
+    --z-index-7:7;
+    --z-index-8:8;
+    --z-index-9:9;
+    --z-index-10:10;
+    --z-index-11:11;
+
+.fs-6 {
+    font-size: .6rem
+}
+
+.fs-7 {
+    font-size: .7rem
+}
+
+.fs-8 {
+    font-size: .8rem
+}
+
+.fs-9 {
+    font-size: .9rem
+}
+
+.fs-10 {
+    font-size: 1rem
+}
+
+.fs-11 {
+    font-size: 1.1rem
+}
+
+.fs-12 {
+    font-size: 1.2rem
+}
+
+.fs-13 {
+    font-size: 1.3rem
+}
+
+.fs-14 {
+    font-size: 1.4rem
+}
+
+.fs-15 {
+    font-size: 1.5rem
+}
+
+.fs-16 {
+    font-size: 1.6rem
+}
+
+.fs-17 {
+    font-size: 1.7rem
+}
+
+.fs-18 {
+    font-size: 1.8rem
+}
+
+.fs-20 {
+    font-size: 2rem
+}
+}
+
+
+
+
+// --blue: #007bff;
+// --indigo: #6610f2;
+// --purple: #6f42c1;
+// --pink: #e83e8c;
+// --red: #dc3545;
+// --orange: #fd7e14;
+// --yellow: #ffc107;
+// --green: #28a745;
+// --teal: #20c997;
+// --cyan: #17a2b8;
+// --gray-dark: #343a40;
+// --primary: #007bff;
+// --secondary: #6c757d;
+// --success: #28a745;
+// --info: #17a2b8;
+// --warning: #ffc107;
+// --danger: #dc3545;
+// --light: #f8f9fa;

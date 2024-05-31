@@ -1,0 +1,14 @@
+{
+  "name": "shuddhi_sports",
+  "version": "1.0.0",
+  "description": "sportshop manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sport"
+  ],
+  "author": "atul",
+  "license": "ISC"
+}

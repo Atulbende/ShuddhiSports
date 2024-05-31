@@ -1,0 +1,24 @@
+.breadcrumb{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 3rem;
+    z-index: 777;
+}
+.breadcrumb-item{
+    display: flex;
+    align-items: center;
+    padding:0.8rem;
+}
+.breadcrumb-item a{
+    padding:0.2rem;
+    overflow: hidden;
+    color:blue;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration:underline;
+    text-transform: capitalize;
+}
+.breadcrumb-item >  .active{
+   background-color: transparent!important;
+}

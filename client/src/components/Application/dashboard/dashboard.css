@@ -1,0 +1,46 @@
+.row{
+    width: 100% !important;
+ 
+display: flex;
+justify-content: center;
+  align-items: center;
+}
+
+.widget-box{
+    color: aliceblue;
+    border-radius: 20px;
+    
+  background: rgba(88, 86, 214, 1) !important;
+    line-height: 2rem;
+    width: 100%;
+    padding: 0.5rem;
+    /* margin: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1rem!important;
+}
+.widget-icons{
+    font-size: 2rem;
+    padding: 15px;
+}
+.box-3{
+  background:rgba(229, 83, 83,1)!important
+}
+.box-2{
+    background:rgba(249, 177, 21)!important
+  }
+  .box-4{
+    background:rgba(51, 153, 255)!important
+  }
+
+@media screen and (max-width: 768px) {
+    .widget-box{
+       padding: 0.5rem;
+      
+       margin: 1rem auto!important;
+    }
+.row{
+    flex-flow: column;
+}
+}

@@ -1,0 +1,19 @@
+.content-form{
+    margin: auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: inherit;
+    max-height: 100%;
+    padding:20px;
+    z-index:100;
+    
+    // overflow-x:auto;
+}
+
+@media screen  and (max-width: 768px)  {
+    .content-form{
+         height: 100%;
+         overflow:scroll;
+         padding:0px;
+    }
+ }

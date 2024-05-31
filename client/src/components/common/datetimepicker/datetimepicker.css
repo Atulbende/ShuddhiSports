@@ -1,0 +1,27 @@
+.react-datepicker-wrapper{
+    display: inline-block;
+    padding: 0;
+    border: 0;
+    height: 100% !important;
+    width: 100%;
+}
+
+.react-datepicker-wrapper > input{
+    height: 100%!important;
+    width: 100%!important;
+    border-radius: 2rem!important;
+   
+}
+.react-datepicker__input-container{
+    position: relative!important;
+    display: flex!important;
+    justify-content: left!important;
+    align-items: center!important;
+    width: 100%!important;
+}
+.react-datepicker__view-calendar-icon input{
+    padding: 6px 10px 5px 50px!important;
+    height: 100%!important;
+    width: 100%!important;
+    border-radius: 2rem!important;
+}

@@ -1,0 +1,124 @@
+
+.top-nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    height:6vh;
+    min-height: 6vh;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 32px 0px  rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    background-color:var(--bg-color);
+    color: var(--font-color);      
+}
+#start{
+    font-size: 1.2rem;
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}   
+.bars{
+    margin:auto;
+    cursor: pointer;
+}
+.bars-circle{
+    padding: 0.7rem 1rem;
+   border-radius: 100%;  
+   transition: 0.6s all ease;
+}
+.bars-circle:hover{
+  
+background-color: var(--hover);
+}
+#end{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    margin:20px;   
+}
+.popup-menu{
+    z-index:  999;
+    background-color:var(--dialog);
+    color:var(--font-color);
+    border-radius: 10%;  
+    position: fixed;
+    padding: 15px;
+    margin: 15px;
+    top:57px;
+    right: 0;
+    min-width: 16rem;
+    line-height: 3.5rem; 
+   box-shadow: 0px 4px 32px 0px  rgba(0, 0, 0, 0.1);
+   border:1px solid var(--border);
+}
+.popup-menu ul li a{
+    padding: 10px;
+}
+
+.popup-menu ul li:hover{
+    border-radius: 500px;
+    cursor: pointer;
+    background: var(--hover);
+    color: var(--hover-color);
+    transition: 0.6s all ease;
+}
+.popup-menu ul li .menu-title{
+    padding: 20px;    
+}
+
+.popup-menu ul li{
+    margin-bottom: 10px;
+    border-bottom:1px solid var(--border);
+}
+
+.shop-popup-menu{
+    position: fixed;
+    font-size: 0.8rem;
+    font-style: none;
+    background-color:var(--dialog);
+    color:var(--font-color);
+    border-radius: 10%;  
+    position: fixed;
+    padding: 15px;
+    margin: 15px;
+    top:5vh;
+    /* right: 0; */
+    min-width: 16rem;
+    line-height: 3.5rem; 
+    box-shadow: 0px 4px 32px 0px  rgba(0, 0, 0, 0.1);
+    border:1px solid var(--border);
+}
+.shop-popup-menu ul li .menu-title{
+    padding: 20px;    
+}
+.shop{cursor: pointer;}   
+.shop-popup-menu ul li{
+    margin-bottom: 10px;
+    border-bottom:1px solid var(--border);
+}
+
+.shop-popup-menu ul li:hover{
+    border-radius: 500px;
+    cursor: pointer;
+    background: var(--hover);
+    color: var(--hover-color);
+    transition: 0.6s all ease;
+}  
+.shop-selected{
+    border-radius: 500px;
+    cursor: pointer;
+    background: var(--hover);
+    color: var(--hover-color);
+} 
+
+@media (max-width:640px) {
+    #start{
+           width: 30%;
+       }    
+       .start-title{
+        display: none;
+        margin-right: -36px;} 
+}
+/*dialog of*/

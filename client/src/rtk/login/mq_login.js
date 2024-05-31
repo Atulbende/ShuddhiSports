@@ -1,0 +1,67 @@
+import {apiSlice} from '../apiSlice';
+import {user} from '../../services/api/endPoints';
+export const mq_login= apiSlice.injectEndpoints({
+    endpoints:(build)=>({
+        userLogin:build.mutation({
+            query:({data})=>({
+                url:user.user_login,
+                method:'POST',
+                data:data
+            })
+        }),
+        UserSingup:build.mutation({
+            query:({data})=>({
+                url:user.user_singup,
+                method:'POST',
+                data:data
+            })
+        }),
+        UserLogout:build.mutation({
+            query:()=>({
+                url:user.user_logout,
+                method:'POST',
+                data:''
+            })
+        }),
+        getRoles:build.query({
+            query:()=>({
+                url:user.user_GetRoles,
+                method:'GET',
+                data:''
+            })
+        }),
+        getGridUsers:build.query({
+            query:()=>({
+                url:user.user_GridUsers,
+                method:'GET',
+                data:''
+            }),
+            providesTags:['users']
+        }),
+        openUser:build.mutation({
+            query:({data})=>({
+                url:user.user_OpenUser,
+                method:'POST',
+                data:data
+            })
+        }),
+        saveUser:build.mutation({
+            query:({data})=>({
+                url:user.user_SaveUser,
+                method:'POST',
+                data:data
+            }),
+            invalidatesTags:['users']
+        })
+        
+    })
+}); 
+export const {
+    useUserLoginMutation,
+    useUserSingupMutation,
+    useUserLogoutMutation,
+    useGetRolesQuery,
+    useGetGridUsersQuery,
+    useOpenUserMutation,
+    useSaveUserMutation
+}=mq_login

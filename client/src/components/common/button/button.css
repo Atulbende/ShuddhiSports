@@ -1,0 +1,25 @@
+.btn button{
+    max-width: 7rem;
+    width: 7rem;
+    margin: 0.7rem;
+    border-radius: 20rem;
+    padding: 0.7rem;
+    border: 0.1rem  solid var(--border);
+    color: var(--dark);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    transition: all  0.3s linear;
+    box-shadow: 0px 4px 5px 0px  rgba(0, 0 , 0, 0.1);
+    background-color: transparent;
+    color: var(--hover-color);
+}
+.btn button:hover{
+    transform: scale(0.9);
+    background-color: var(--hover);
+    color: var(--hover-color);
+}
+.btn span::first-letter{
+    font-size: large;
+    font-weight: 400;
+}
