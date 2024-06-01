@@ -28,10 +28,14 @@ module.exports={
             get_GridCategorys:'app/getGridCategorys',
             app_CategorySave:'app/categorySave',
             app_OpenCategory:'app/openCategory',
-            // 
+            // Brand
             get_GridBrands:'app/getGridBrands',
             app_BrandSave:'app/brandSave',
             app_OpenBrand:'app/openBrand',
+            // Size
+            get_GridSizes:'app/getGridSizes',
+            app_SizeSave:'app/sizeSave',
+            app_OpenSize:'app/openSize',
         },
         getDashboard:'app/Dashboard'
     }

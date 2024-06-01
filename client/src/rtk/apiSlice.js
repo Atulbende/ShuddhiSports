@@ -4,5 +4,5 @@ export const apiSlice=createApi({
     reducerPath:'apiSlice',
     baseQuery:axiosBaseQuery(),
     endpoints:()=>({}),
-    tagTypes:['users','categorys','brands']
+    tagTypes:['users','categorys','brands','sizes']
 });
