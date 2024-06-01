@@ -8,7 +8,7 @@ const mq_common=apiSlice.injectEndpoints({
                     method:'POST',
                     data:data
                 }),
-                invalidatesTags:['users','customers','categorys']
+                invalidatesTags:['users','customers','categorys','brands','sizes']
             }),
         commonList:build.query({
             query:(_key)=>
