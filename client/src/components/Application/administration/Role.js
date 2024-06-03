@@ -8,28 +8,26 @@ import SelectFields from '../../common/select-field/SelectFields';
 import { useLocation } from 'react-router-dom';
 import { root } from '../../../services/root/root';
 export default function Role() {
-  const { data:RoleList, error, isLoading }  =useGetRolesQuery();
+  const { data:RoleList, error, isLoading }=useGetRolesQuery();
   const [OpenUser]= useOpenUserMutation();
   const [saveUser]=useSaveUserMutation();
   const [user,setUser]=useState({});
   const [isRequired,setIsRequired]=useState([]);
   const {state:recordId}= useLocation();
-  
   const saveHandle=async()=>{
-    console.log('user:',user);
     return await root.form.save(saveUser,isRequired,user);
-}
+  }
   useEffect(()=>{
     if(!isLoading){
      root.form.load(OpenUser,recordId,setUser,setIsRequired);
     }
   },[recordId,isLoading])
  const options = [{ value: 'Active', label: 'Active' },{ value: 'DeActive', label: 'DeActive' }];
- const actions=[{"title":'Save',"icon":'fa fa-check',"className":'btn-1',"action":saveHandle}];
+ const actions=[{"id":'Btn_User_Selector',"title":'Save',"icon":'fa fa-check',"className":'btn-1',"action":saveHandle}];
   return (
     <>
-      <ActionBar type={'Form'} actionsButton={actions}/>
-          <div  className='content-form'><br/>
+      <ActionBar formId={'Div_User_Selector'} ButtonId='Btn_User_Selector'  type={'Form'} actionsButton={actions}/>
+          <div id="Div_User_Selector" className='content-form'><br/>
             <TextFields onChangeEvent={setUser} val={user?.UserName} label='User Name' id={'UserName'} col={'col-33'}/> 
             <TextFields onChangeEvent={setUser}val={user?.Email} label='Email' id='Email' col='col-33'/> 
             <SelectFields onChangeEvent={setUser}  val={user?.Status} options={options} label='Status' id='Status' col='col-33'></SelectFields>

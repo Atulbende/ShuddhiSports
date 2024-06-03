@@ -6,7 +6,8 @@
   import ConfirmationDialog from '../../common/confirmation-dialog/ConfirmationDialog';
   import { root } from '../../../services/root/root.js';
   import { useComDeleteMutation } from '../../../rtk/common/common.js';
-  function ActionBar({GridId, ids, setIds, setRefresh, type, actionsButton, activity, tableName }) {
+import useEnterKeyPress from '../../../hooks/useEnterKeyPress.js';
+  function ActionBar({formId,ButtonId,GridId, ids, setIds, setRefresh, type, actionsButton, activity, tableName }) {
     const [comDelete]=useComDeleteMutation()
     const [isLoader,setIsLoader]=useState(false);
     const [actionToggle, setActionToggle] = useState('')
@@ -36,7 +37,7 @@
     function toggleActionFn() {
       actionToggle === 'd-none' ? setActionToggle('d-flex') : setActionToggle('d-none')
     }
-
+     useEnterKeyPress(true,formId,ButtonId);         
     return (
       <section className='action-bar'>
         <span className='error_msg'></span>
@@ -47,7 +48,7 @@
           <div className='trasition-bar'>
             <ul className={`bar-button ${actionToggle}`} >
             {actionsButton?.map((btn, index) => (
-                  <li key={index} onClick={() => onActinBtn(btn.action)} className={btn.className}>
+                  <li id={btn?.id?btn?.id:''} key={index} onClick={() => onActinBtn(btn.action)} className={btn.className}>
                     {!isLoader ? (
                       <>
                         <i className={btn.icon} aria-hidden="true"></i>

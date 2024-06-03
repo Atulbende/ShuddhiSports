@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import '../dialog/dialog.css';
- export function Dialog({children,classes}) {
+ export function Dialog({children,classes,id}) {
   return ReactDom.createPortal(
     <>  
-    <div className={`dialog-overlay `}>
+    <div id={id} className={`dialog-overlay `}>
         <div className={`dialog  ${classes}`}>
             {children}
           </div>
