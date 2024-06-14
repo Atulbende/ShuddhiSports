@@ -11,7 +11,7 @@ const corsOptions = {
     'https://shuddhi-sports-c39dz3lg4-atul-s-projects-b035b0ba.vercel.app',
     'https://shuddhi-sports-git-master-atul-s-projects-b035b0ba.vercel.app',
     'https://shuddhi-sports.vercel.app',
-    'shuddhi-sports-nsd6ij216-atul-s-projects-b035b0ba.vercel.app'],
+    'https://shuddhi-sports-p6tbuj1mt-atul-s-projects-b035b0ba.vercel.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify the allowed HTTP methods
     allowedHeaders: ['Content-Type', 'Authorization','AppId'], // Specify the allowed headers
     credentials: true // Enable credentials (cookies, authorization headers, etc)
